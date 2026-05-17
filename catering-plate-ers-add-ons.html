@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Catering Plate-Ers + Add-Ons - Amine Shawarma</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+}
+
+/* HEADER */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:black;
+    padding:15px 30px;
+}
+
+.logo{
+    color:white;
+    font-size:40px;
+    font-weight:bold;
+}
+
+.logo a{
+    text-decoration:none;
+    color:white;
+}
+.logo span{
+    color:#67b7b5;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+}
+
+.menu a:hover{
+    color:#67b7b5;
+}
+
+.order{
+    background:#ef3b2d;
+    color:white;
+    padding:12px 20px;
+    border-radius:6px;
+    font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+    height:320px;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('images/catering-plate-ers-add-ons/PL-Catering_Plate-Ers-BeefShwrm.webp');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero h1{
+    color:white;
+    font-size:55px;
+    text-shadow:2px 2px 10px black;
+    text-align:center;
+}
+
+/* MENU */
+
+.menu-section{
+    padding:70px 40px;
+}
+
+.menu-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+/* CARD */
+
+.food-card{
+    width:320px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.food-card:hover{
+    transform:translateY(-10px);
+}
+
+.food-card img{
+    width:100%;
+    height:230px;
+    object-fit:contain;
+    background:#fff;
+}
+
+.food-info{
+    padding:20px;
+}
+
+.food-info h3{
+    margin:0;
+    font-size:24px;
+}
+
+.food-info p{
+    color:#666;
+    margin:15px 0;
+    line-height:1.6;
+}
+
+.price{
+    color:#67b7b5;
+    font-size:24px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+.footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:80px;
+}
+
+.footer h2{
+    margin-bottom:10px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+
+.header{
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
+}
+
+.logo{
+    font-size:32px;
+}
+
+.menu{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.menu a{
+    margin:0;
+}
+
+.order{
+    width:100%;
+    text-align:center;
+}
+
+.hero{
+    height:250px;
+}
+
+.hero h1{
+    font-size:45px;
+    text-align:center;
+}
+
+.menu-section{
+    padding:40px 20px;
+}
+
+.food-card{
+    width:100%;
+    max-width:350px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<div class="header">
+
+    <div class="logo">
+    <a href="index.html">
+        AMINE <span>LAND</span>
+    </a>
+</div>
+    <div class="menu">
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About</a>
+
+    <a href="menu.html">
+    Menu
+</a>
+
+    <a href="catering.html" style="color:#67b7b5;">
+    Catering
+</a>
+
+<a href="locations.html">Locations</a>
+
+    <a href="contact.html">Contact</a>
+
+</div>
+
+
+    <div class="order">
+        ORDER NOW
+    </div>
+
+</div>
+
+<!-- HERO -->
+
+<div class="hero">
+
+    <h1>
+        CATERING PLATE-ERS + ADD-ONS
+    </h1>
+
+</div>
+
+<!-- MENU -->
+
+<div class="menu-section">
+
+<div class="menu-container">
+
+    <!-- CARD 1 -->
+
+    <div class="food-card">
+
+        <img src="images/catering-plate-ers-add-ons/PL-Catering_Plate-Ers_GardenSalad.webp">
+
+        <div class="food-info">
+
+            <h3>Garden Salad</h3>
+
+            <p>
+                Fresh Mediterranean garden salad platter.
+            </p>
+
+            <div class="price">
+                $14.99
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CARD 2 -->
+
+    <div class="food-card">
+
+        <img src="images/catering-plate-ers-add-ons/PL-Catering_Plate-Ers_GarlicPotatoes.webp">
+
+        <div class="food-info">
+
+            <h3>Garlic Potatoes</h3>
+
+            <p>
+                Crispy garlic potatoes perfect for catering.
+            </p>
+
+            <div class="price">
+                $11.99
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CARD 3 -->
+
+    <div class="food-card">
+
+        <img src="images/catering-plate-ers-add-ons/PL-Catering_Plate-Ers_Hummus.webp">
+
+        <div class="food-info">
+
+            <h3>Hummus</h3>
+
+            <p>
+                Creamy hummus with olive oil and spices.
+            </p>
+
+            <div class="price">
+                $9.99
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CARD 4 -->
+
+    <div class="food-card">
+
+        <img src="images/catering-plate-ers-add-ons/PL-Catering_Plate-Ers_PitaBread.webp">
+
+        <div class="food-info">
+
+            <h3>Pita Bread</h3>
+
+            <p>
+                Fresh baked pita bread served warm.
+            </p>
+
+            <div class="price">
+                $5.99
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CARD 5 -->
+
+    <div class="food-card">
+
+        <img src="images/catering-plate-ers-add-ons/PL-Catering_Plate-Ers_Sauces.webp">
+
+        <div class="food-info">
+
+            <h3>Sauces</h3>
+
+            <p>
+                Garlic, tahini and signature sauces.
+            </p>
+
+            <div class="price">
+                $4.99
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CARD 6 -->
+
+    <div class="food-card">
+
+        <img src="images/catering-plate-ers-add-ons/PL-Catering_PlateErs-BeefKebab.webp">
+
+        <div class="food-info">
+
+            <h3>Beef Kebab Plate</h3>
+
+            <p>
+                Tender beef kebab served with pita bread.
+            </p>
+
+            <div class="price">
+                $21.99
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CARD 7 -->
+
+    <div class="food-card">
+
+        <img src="images/catering-plate-ers-add-ons/PL-Catering_Plate-Ers-BeefShwrm.webp">
+
+        <div class="food-info">
+
+            <h3>Beef Shawarma Plate</h3>
+
+            <p>
+                Juicy beef shawarma with Mediterranean sides.
+            </p>
+
+            <div class="price">
+                $20.99
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CARD 8 -->
+
+    <div class="food-card">
+
+        <img src="images/catering-plate-ers-add-ons/PL-Catering_Plate-Ers-ChkKebab.webp">
+
+        <div class="food-info">
+
+            <h3>Chicken Kebab Plate</h3>
+
+            <p>
+                Grilled chicken kebab with garlic potatoes.
+            </p>
+
+            <div class="price">
+                $19.99
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CARD 9 -->
+
+    <div class="food-card">
+
+        <img src="images/catering-plate-ers-add-ons/PL-Catering_Plate-Ers-ChkShwrm.webp">
+
+        <div class="food-info">
+
+            <h3>Chicken Shawarma Plate</h3>
+
+            <p>
+                Fresh chicken shawarma served with pita bread.
+            </p>
+
+            <div class="price">
+                $18.99
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CARD 10 -->
+
+    <div class="food-card">
+
+        <img src="images/catering-plate-ers-add-ons/PL-Catering_Plate-Ers-ChkSouvlaki.webp">
+
+        <div class="food-info">
+
+            <h3>Chicken Souvlaki Plate</h3>
+
+            <p>
+                Mediterranean chicken souvlaki catering platter.
+            </p>
+
+            <div class="price">
+                $19.99
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- CARD 11 -->
+
+    <div class="food-card">
+
+        <img src="images/catering-plate-ers-add-ons/PL-Catering_Plate-Ers-Falafel.webp">
+
+        <div class="food-info">
+
+            <h3>Falafel Plate</h3>
+
+            <p>
+                Crispy falafel served with hummus and sauces.
+            </p>
+
+            <div class="price">
+                $16.99
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+    <h2>
+        Amine Shawarma
+    </h2>
+
+    <p>
+        Fresh Mediterranean Catering Everyday
+    </p>
+
+</div>
+
+</body>
+</html>

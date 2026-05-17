@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Franchising - Amine Shawarma</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f8f8f8;
+}
+
+/* HEADER */
+
+.header{
+    width:100%;
+    background:white;
+    padding:20px 60px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    border-bottom:1px solid #ddd;
+}
+
+.logo{
+    font-size:42px;
+    font-weight:bold;
+    color:black;
+}
+
+.logo span{
+    color:#67b7b5;
+}
+.logo a{
+    text-decoration:none;
+    color:black;
+}
+.nav{
+    display:flex;
+    gap:35px;
+}
+
+.nav a{
+    text-decoration:none;
+    color:#444;
+    font-size:20px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.nav a:hover{
+    color:#67b7b5;
+}
+
+.order-btn{
+    background:#e53935;
+    color:white;
+    padding:15px 28px;
+    border-radius:8px;
+    font-weight:bold;
+    font-size:18px;
+}
+
+/* HERO */
+
+.hero{
+    height:650px;
+    background:#f8f8f8;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+    text-align:center;
+    padding:40px;
+}
+
+.hero h1{
+    font-size:95px;
+    color:black;
+    margin-bottom:25px;
+}
+
+.hero p{
+    font-size:58px;
+    font-weight:bold;
+    line-height:1.3;
+    color:black;
+    max-width:1200px;
+}
+
+.hero span{
+    margin-top:35px;
+    color:#67b7b5;
+    font-size:75px;
+    font-weight:bold;
+}
+
+/* SECTION */
+
+.section{
+    width:100%;
+    padding:100px 60px;
+}
+
+.section-container{
+    max-width:1400px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    align-items:center;
+}
+
+.section img{
+    width:100%;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.section-text h2{
+    font-size:55px;
+    margin-bottom:25px;
+}
+
+.section-text p{
+    font-size:24px;
+    line-height:1.8;
+    color:#555;
+}
+
+/* CARDS */
+
+.cards-section{
+    padding:80px 60px;
+}
+
+.cards-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.cards-title h2{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.cards-title p{
+    font-size:24px;
+    color:#666;
+}
+
+.cards{
+    max-width:1400px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:40px;
+}
+
+.card{
+    background:white;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:260px;
+    object-fit:contain;
+    background:white;
+}
+
+.card-content{
+    padding:30px;
+}
+
+.card-content h3{
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+.card-content p{
+    color:#666;
+    line-height:1.7;
+    margin-bottom:25px;
+    font-size:18px;
+}
+
+.card-content a{
+    display:inline-block;
+    background:#67b7b5;
+    color:white;
+    padding:14px 25px;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+.footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+    margin-top:80px;
+}
+
+.footer h2{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.footer p{
+    color:#ccc;
+    font-size:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    .header{
+        flex-direction:column;
+        gap:25px;
+    }
+
+    .nav{
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+    .hero{
+        height:auto;
+        padding:100px 20px;
+    }
+
+    .hero h1{
+        font-size:60px;
+    }
+
+    .hero p{
+        font-size:35px;
+    }
+
+    .hero span{
+        font-size:45px;
+    }
+
+    .section-container{
+        grid-template-columns:1fr;
+    }
+
+    .section-text h2{
+        font-size:40px;
+    }
+
+    .section-text p{
+        font-size:20px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<div class="header">
+
+    <div class="logo">
+    <a href="index.html">
+        AMINE <span>LAND</span>
+    </a>
+</div>
+
+    <div class="nav">
+
+        <a href="about.html">ABOUT</a>
+        <a href="menu.html">MENU</a>
+        <a href="catering.html">CATERING</a>
+        <a href="francaise.html">FRANCHISING</a>
+        <a href="locations.html">LOCATIONS</a>
+        <a href="contact.html">CONTACT</a>
+        <a href="blog.html">BLOG</a>
+
+    </div>
+
+    <div class="order-btn">
+        ORDER NOW
+    </div>
+
+</div>
+
+<!-- HERO -->
+
+<div class="hero">
+
+    <h1>
+        FRANCHISING!
+    </h1>
+
+    <p>
+        Fresh. Halal. Abundant Opportunity.<br>
+        Be Part of the Mid-East Taste Revolution.
+    </p>
+
+    <span>
+        Own a Slice of Culture
+    </span>
+
+</div>
+
+<!-- SECTION -->
+
+<div class="section">
+
+<div class="section-container">
+
+    <img src="images/galleryshawarma1.jpg">
+
+    <div class="section-text">
+
+        <h2>
+            Build Your Own Shawarma Business
+        </h2>
+
+        <p>
+            Join the Amine Shawarma family and become part of one of the fastest growing Mediterranean food concepts.
+            We provide modern branding, premium catering systems, restaurant training,
+            and professional franchise support to help you grow successfully.
+        </p>
+
+    </div>
+
+</div>
+
+</div>
+
+<!-- CARDS -->
+
+<div class="cards-section">
+
+    <div class="cards-title">
+
+        <h2>
+            Why Choose Us?
+        </h2>
+
+        <p>
+            Premium Mediterranean food and modern franchise opportunities.
+        </p>
+
+    </div>
+
+    <div class="cards">
+
+        <!-- CARD 1 -->
+
+        <div class="card">
+
+            <img src="images/galleryshawarma1.jpg">
+
+            <div class="card-content">
+
+                <h3>
+                    Strong Brand
+                </h3>
+
+                <p>
+                    Become part of a trusted Mediterranean restaurant brand with loyal customers.
+                </p>
+
+                <a href="#">
+                    Learn More
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 2 -->
+
+        <div class="card">
+
+            <img src="images/family-wrap-pack.webp">
+
+            <div class="card-content">
+
+                <h3>
+                    Premium Catering
+                </h3>
+
+                <p>
+                    Offer wraps, shawarma platters, salads and catering meals for all events.
+                </p>
+
+                <a href="#">
+                    Catering
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- CARD 3 -->
+
+        <div class="card">
+
+            <img src="images/galleryshawarma1.jpg">
+
+            <div class="card-content">
+
+                <h3>
+                    Fast Growth
+                </h3>
+
+                <p>
+                    Modern systems and franchise support designed for rapid restaurant success.
+                </p>
+
+                <a href="#">
+                    Apply Now
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+    <h2>
+        Amine Shawarma
+    </h2>
+
+    <p>
+        Fresh Mediterranean Food Everyday
+    </p>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Best Shawarma in Toronto - Amine Land</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+    color:#333;
+}
+
+/* HEADER */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    background:black;
+}
+
+.logo{
+    font-size:42px;
+    font-weight:bold;
+}
+
+.logo a{
+    text-decoration:none;
+    color:white;
+}
+
+.logo span{
+    color:#67b7b5;
+}
+
+.menu a{
+    text-decoration:none;
+    color:white;
+    margin:0 15px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.menu a:hover{
+    color:#67b7b5;
+}
+
+/* HERO */
+
+.hero{
+    height:500px;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+    url('https://images.unsplash.com/photo-1529006557810-274b9b2fc783?q=80&w=1400&auto=format&fit=crop');
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero h1{
+    color:white;
+    font-size:70px;
+    text-align:center;
+    text-shadow:2px 2px 10px black;
+    padding:20px;
+}
+
+/* ARTICLE */
+
+.article{
+    max-width:1000px;
+    margin:auto;
+    padding:80px 30px;
+    background:white;
+}
+
+.article h2{
+    font-size:42px;
+    margin-bottom:30px;
+}
+
+.article p{
+    font-size:22px;
+    line-height:2;
+    margin-bottom:30px;
+    color:#555;
+}
+
+/* IMAGE */
+
+.article img{
+    width:100%;
+    border-radius:20px;
+    margin:40px 0;
+}
+
+/* FOOTER */
+
+.footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+.footer h2{
+    margin-bottom:15px;
+    font-size:38px;
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.header{
+    flex-direction:column;
+    gap:20px;
+}
+
+.menu{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    text-align:center;
+}
+
+.hero{
+    height:300px;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.article{
+    padding:40px 20px;
+}
+
+.article h2{
+    font-size:30px;
+}
+
+.article p{
+    font-size:18px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<div class="header">
+
+<div class="logo">
+<a href="index.html">
+AMINE <span>LAND</span>
+</a>
+</div>
+
+<div class="menu">
+
+<a href="index.html">Home</a>
+<a href="menu.html">Menu</a>
+<a href="blog.html" style="color:#67b7b5;">
+Blog
+</a>
+<a href="contact.html">Contact</a>
+
+</div>
+
+</div>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<h1>BEST SHAWARMA IN TORONTO</h1>
+
+</div>
+
+<!-- ARTICLE -->
+
+<div class="article">
+
+<h2>
+Why Customers Love Amine Land
+</h2>
+
+<p>
+At Amine Land, we prepare fresh shawarma everyday using premium ingredients, homemade sauces and authentic Mediterranean recipes.
+</p>
+
+<p>
+Our chicken and beef shawarma are marinated with special spices and cooked slowly for maximum flavor and tenderness.
+</p>
+
+<img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?q=80&w=1400&auto=format&fit=crop">
+
+<p>
+Customers love our fresh saj wraps, bowls, burgers and healthy Mediterranean platters served daily.
+</p>
+
+<p>
+We believe quality food and fresh ingredients make the best shawarma experience in Toronto.
+</p>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<h2>
+Amine Shawarma
+</h2>
+
+<p>
+Fresh Mediterranean Food Everyday
+</p>
+
+</div>
+
+</body>
+</html>

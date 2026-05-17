@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Potato Bowls - Amine Shawarma</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#f5f5f5;
+}
+
+/* HEADER */
+
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:black;
+    padding:15px 30px;
+}
+
+.logo{
+    font-size:40px;
+    font-weight:bold;
+}
+
+.logo a{
+    text-decoration:none;
+    color:white;
+}
+
+.logo span{
+    color:gold;
+}
+
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+}
+
+.menu a:hover{
+    color:gold;
+}
+
+.order{
+    background:gold;
+    color:black;
+    padding:12px 18px;
+    border-radius:8px;
+    font-weight:bold;
+}
+
+/* HERO */
+
+.hero{
+    height:320px;
+    background:url('images/Potato Bowls/PotatoBowls-ChknShawarma.webp');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero h1{
+    color:white;
+    font-size:65px;
+    text-shadow:2px 2px 10px black;
+}
+
+/* MENU */
+
+.menu-section{
+    padding:70px 40px;
+}
+
+.menu-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.food-card{
+    width:320px;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.15);
+    transition:0.3s;
+}
+
+.food-card:hover{
+    transform:translateY(-10px);
+}
+
+.food-card img{
+    width:100%;
+    height:230px;
+    object-fit:contain;
+    background:white;
+}
+
+.food-info{
+    padding:20px;
+}
+
+.food-info h3{
+    margin:0;
+    font-size:26px;
+}
+
+.food-info p{
+    color:#666;
+    margin:15px 0;
+    line-height:1.5;
+}
+
+.price{
+    color:goldenrod;
+    font-size:24px;
+    font-weight:bold;
+}
+
+/* FOOTER */
+
+.footer{
+    background:black;
+    color:white;
+    text-align:center;
+    padding:40px;
+    margin-top:80px;
+}
+@media(max-width:768px){
+
+.header{
+    flex-direction:column;
+    gap:20px;
+    padding:20px;
+}
+
+.logo{
+    font-size:32px;
+}
+
+.menu{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+}
+
+.menu a{
+    margin:0;
+}
+
+.order{
+    width:100%;
+    text-align:center;
+}
+
+.hero{
+    height:250px;
+}
+
+.hero h1{
+    font-size:45px;
+    text-align:center;
+}
+
+.menu-section{
+    padding:40px 20px;
+}
+
+.food-card{
+    width:100%;
+    max-width:350px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<div class="header">
+
+<div class="logo">
+    <a href="index.html">
+        AMINE <span>LAND</span>
+    </a>
+</div>
+
+<div class="menu">
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About</a>
+
+    <a href="menu.html" style="color:gold;">
+        Menu
+    </a>
+
+    <a href="catering.html">
+        Catering
+    </a>
+
+    <a href="#">Locations</a>
+
+    <a href="contact.html">Contact</a>
+
+</div>
+
+<div class="order">
+ORDER NOW
+</div>
+
+</div>
+
+<!-- HERO -->
+
+<div class="hero">
+<h1>POTATO BOWLS</h1>
+</div>
+
+<!-- MENU -->
+
+<div class="menu-section">
+
+<div class="menu-container">
+
+<!-- CARD 1 -->
+
+<div class="food-card">
+
+<img src="images/Potato Bowls/PotatoBowls-ChknShawarma.webp">
+
+<div class="food-info">
+
+<h3>Chicken Shawarma Potato Bowl</h3>
+
+<p>
+Loaded potato bowl with chicken shawarma and sauces.
+</p>
+
+<div class="price">$15.99</div>
+
+</div>
+</div>
+
+<!-- CARD 2 -->
+
+<div class="food-card">
+
+<img src="images/Potato Bowls/PotatoBowls-BeefShawarma-1.webp">
+
+<div class="food-info">
+
+<h3>Beef Shawarma Potato Bowl</h3>
+
+<p>
+Crispy potatoes topped with beef shawarma and sauce.
+</p>
+
+<div class="price">$16.99</div>
+
+</div>
+</div>
+
+<!-- CARD 3 -->
+
+<div class="food-card">
+
+<img src="images/Potato Bowls/PotatoBowls-ChknKabob.webp">
+
+<div class="food-info">
+
+<h3>Chicken Kabob Potato Bowl</h3>
+
+<p>
+Chicken kabob served over crispy potato bowl.
+</p>
+
+<div class="price">$17.99</div>
+
+</div>
+</div>
+
+<!-- CARD 4 -->
+
+<div class="food-card">
+
+<img src="images/Potato Bowls/PotatoBowls-BeefKabob.webp">
+
+<div class="food-info">
+
+<h3>Beef Kabob Potato Bowl</h3>
+
+<p>
+Tender beef kabob served with crispy potato bowl.
+</p>
+
+<div class="price">$18.99</div>
+
+</div>
+</div>
+
+<!-- CARD 5 -->
+
+<div class="food-card">
+
+<img src="images/Potato Bowls/PotatoBowls-ChknSouvlaki.webp">
+
+<div class="food-info">
+
+<h3>Chicken Souvlaki Potato Bowl</h3>
+
+<p>
+Greek style chicken souvlaki with potato bowl.
+</p>
+
+<div class="price">$17.99</div>
+
+</div>
+</div>
+
+<!-- CARD 6 -->
+
+<div class="food-card">
+
+<img src="images/Potato Bowls/PotatoBowls-Falafel.png">
+
+<div class="food-info">
+
+<h3>Falafel Potato Bowl</h3>
+
+<p>
+Crispy falafel served on loaded potato bowl.
+</p>
+
+<div class="price">$14.99</div>
+
+</div>
+</div>
+
+<!-- CARD 7 -->
+
+<div class="food-card">
+
+<img src="images/Potato Bowls/PotatoBowls-Gyro-.webp">
+
+<div class="food-info">
+
+<h3>Gyro Potato Bowl</h3>
+
+<p>
+Fresh gyro meat loaded over crispy potatoes.
+</p>
+
+<div class="price">$16.99</div>
+
+</div>
+</div>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<div class="footer">
+
+<h2>Amine Shawarma</h2>
+
+<p>
+Fresh Shawarma & Wraps Everyday
+</p>
+
+</div>
+
+</body>
+</html>
